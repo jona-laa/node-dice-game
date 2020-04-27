@@ -1,0 +1,15 @@
+{
+  "name": "dicegame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "diceGame.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
