@@ -14,7 +14,9 @@ let numberOfRolls = 0
 
 // Single dice roll - called by diceGame 
 const singleRoll = () => {
+    prompt(`Kasta tärningen! (Enter)`)
     numberOfRolls++
+    console.log(`Kast ${numberOfRolls}`)
     return Math.floor(Math.random() * 6) + 1
 }
 
@@ -57,6 +59,7 @@ const diceGame = () => {
         // if roll doesn't result in a 1, push result of roll to rolls array, else a double roll is granted
         if (roll !== 1) {
             rolls.push(roll)
+            console.log(`Totala summan är: ${rolls.reduce((roll, nextRoll) => roll + nextRoll)}`)
         } else {
             doubleRoll()
         }
